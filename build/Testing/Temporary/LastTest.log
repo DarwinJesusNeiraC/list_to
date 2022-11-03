@@ -1,0 +1,81 @@
+Start testing: Nov 03 16:01 -05
+----------------------------------------------------------
+1/3 Testing: LisTest.IsEmpty
+1/3 Test: LisTest.IsEmpty
+Command: "/home/darwin/unsa/to/lab/list/build/List" "--gtest_filter=LisTest.IsEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/darwin/unsa/to/lab/list/build
+"LisTest.IsEmpty" start time: Nov 03 16:01 -05
+Output:
+----------------------------------------------------------
+Running main() from /home/darwin/unsa/to/lab/list/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LisTest.IsEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LisTest
+[ RUN      ] LisTest.IsEmpty
+Eliminando objetos
+[       OK ] LisTest.IsEmpty (0 ms)
+[----------] 1 test from LisTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LisTest.IsEmpty" end time: Nov 03 16:01 -05
+"LisTest.IsEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: LisTest.WhenHead
+2/3 Test: LisTest.WhenHead
+Command: "/home/darwin/unsa/to/lab/list/build/List" "--gtest_filter=LisTest.WhenHead" "--gtest_also_run_disabled_tests"
+Directory: /home/darwin/unsa/to/lab/list/build
+"LisTest.WhenHead" start time: Nov 03 16:01 -05
+Output:
+----------------------------------------------------------
+Running main() from /home/darwin/unsa/to/lab/list/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LisTest.WhenHead
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LisTest
+[ RUN      ] LisTest.WhenHead
+Eliminando objetos
+[       OK ] LisTest.WhenHead (0 ms)
+[----------] 1 test from LisTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LisTest.WhenHead" end time: Nov 03 16:01 -05
+"LisTest.WhenHead" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: LisTest.WhenTail
+3/3 Test: LisTest.WhenTail
+Command: "/home/darwin/unsa/to/lab/list/build/List" "--gtest_filter=LisTest.WhenTail" "--gtest_also_run_disabled_tests"
+Directory: /home/darwin/unsa/to/lab/list/build
+"LisTest.WhenTail" start time: Nov 03 16:01 -05
+Output:
+----------------------------------------------------------
+Running main() from /home/darwin/unsa/to/lab/list/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = LisTest.WhenTail
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from LisTest
+[ RUN      ] LisTest.WhenTail
+List: /home/darwin/unsa/to/lab/list/List.cc:50: int List::head(): Assertion `!isEmpty()' failed.
+<end of output>
+Test time =   0.20 sec
+----------------------------------------------------------
+Test Failed.
+"LisTest.WhenTail" end time: Nov 03 16:01 -05
+"LisTest.WhenTail" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 03 16:01 -05

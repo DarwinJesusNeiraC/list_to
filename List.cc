@@ -4,9 +4,11 @@
 * @File: list
 * @Descripcion:
 */
-
+#include <assert.h>
 #include <iostream>
 #include "List.h"
+#include<bits/stdc++.h>
+#include "gtest/gtest.h"
 
 using namespace std;
 
@@ -31,6 +33,7 @@ List* List::append(int e){
 
 // agregar en una posicion indicada
 List* List::append(int e,int p){
+  assert(!isEmpty());
   Node* n = last;
   p-=1;
   while(p--){
@@ -44,6 +47,7 @@ List* List::append(int e,int p){
 }
 
 int List::head(){
+  assert(!isEmpty());
   return last->next->data;
 }
 
@@ -57,12 +61,14 @@ int List::size(){
     c++;
   }
   return c;
+  assert(c>=0);
 }
 // 3 4 5 6 7 8
 // head 3 
 // tail 4 5 6 7 8
 
 List* List::tail(){
+  assert(!isEmpty());
   List* lt = new List();
   Node* n = new Node;
   n = last->next;
@@ -82,4 +88,33 @@ void List::print(){
     if(iter == last)
       iter = nullptr;
   }
+}
+
+class LisTest : public ::testing::Test{
+  protected:
+    void SetUp() override {
+
+      l1->append(3);
+      l1->append(4);
+    }
+
+    void TearDown() override {
+      cout<<"Eliminando objetos\n";
+    }
+    List* l1 = new List();
+    List* l2 = new List();
+    //List* l3 = new List();
+};
+
+TEST_F(LisTest, IsEmpty){
+   EXPECT_EQ(l1->isEmpty(),false);
+}
+
+TEST_F(LisTest, WhenHead){
+   EXPECT_EQ(l1->head(),3);
+   EXPECT_NE(l1->head(),5);
+}
+
+TEST_F(LisTest, WhenTail){
+   EXPECT_NE(l2->head(),3);
 }

@@ -1,0 +1,5 @@
+LisTest.IsEmpty 2 0.0014711
+LisTest.WhenHead 2 0.00136803
+LisTest.WhenTail 0 0
+---
+LisTest.WhenTail

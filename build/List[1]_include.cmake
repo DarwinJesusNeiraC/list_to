@@ -1,0 +1,5 @@
+if(EXISTS "/home/darwin/unsa/to/lab/list/build/List[1]_tests.cmake")
+  include("/home/darwin/unsa/to/lab/list/build/List[1]_tests.cmake")
+else()
+  add_test(List_NOT_BUILT List_NOT_BUILT)
+endif()

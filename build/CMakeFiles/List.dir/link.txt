@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/List.dir/List.cc.o  -o List  lib/libgtest_main.a lib/libgtest.a -lpthread 
